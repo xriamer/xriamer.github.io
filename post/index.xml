@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://xriamer.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 09:18:13 +0800</lastBuildDate><atom:link href="https://xriamer.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Windows Terminal 远程连接 SSH</title>
+      <link>https://xriamer.github.io/post/blog/</link>
+      <pubDate>Sun, 25 Oct 2020 09:18:13 +0800</pubDate>
+      
+      <guid>https://xriamer.github.io/post/blog/</guid>
+      <description>简介 Windows Terminal 是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。关于 Windows Terminal 更多详情请点击此处了解
+  添加一个新的标签页用于远程连接
+打开 Windows Terminal 的 Settings 按钮，在 settings.json 文件中的 profiles 列中添加如下片段
+{ &amp;#34;guid&amp;#34;: &amp;#34;{xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}&amp;#34;, &amp;#34;hidden&amp;#34;: false, &amp;#34;name&amp;#34;: &amp;#34;CentOS&amp;#34;, &amp;#34;commandline&amp;#34;: &amp;#34;ssh name@ip -p port&amp;#34;, &amp;#34;icon&amp;#34;: &amp;#34;https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2323137048,1872350173&amp;amp;fm=26&amp;amp;gp=0.jpg&amp;#34; } 参数含义
+  guid: 唯一标识，可以从 https://www.guidgenerator.com/ 生成一份唯一的标识
+  hidden: 是否隐藏
+  name: 显示在标签页的标题名
+  commandline: 命令行内容，就是在此处配置连接至远程服务器
+# 配置格式 ssh 用户名@主机ip或域名 -p 端口号 # ssh 默认端口号为 22    icon: 图标文件路径，可以是本地路径或者网络路径</description>
+    </item>
+    
+  </channel>
+</rss>
